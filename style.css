@@ -18,7 +18,7 @@ body {
 }
 
 .logo {
-  height: 35px;   /* fits inside 55px header */
+  height: 50px;   /* i just changed fits inside 55px header */
   width: auto;
   margin-bottom: 2px;
 }
