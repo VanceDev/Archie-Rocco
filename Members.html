@@ -3,48 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Members – Archie&Rocco</title>
+  <title>Shop – Archie & Rocco</title>
   <style>
-    /* Copy the same <style> block from main.html */
-    .members-content {
-      max-width: 800px;
-      margin: 0 auto;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: white;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .header {
+      background-color: lightblue;
+      color: black;
+      padding: 30px 20px 20px;
       text-align: center;
-      font-size: 18px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 3px solid #000;
     }
-    .perks {
-      margin-top: 30px;
-      list-style: none;
+
+    .header img {
+      max-height: 100px;
+      width: auto;
+      display: block;
+      margin: 0 auto 15px;
     }
-    .perks li {
-      margin: 15px 0;
-      font-size: 20px;
+
+    nav {
+      margin-top: 15px;
     }
+
+    nav a {
+      color: white;
+      font-size: 30px;
+      margin: 0 25px;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 6px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 3px;
+      background-color: black;
+      transition: width 0.4s ease, left 0.4s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    /* Main content – grows to fill space */
+    main {
+      flex: 1; /* This pushes footer to bottom */
+      padding: 60px 20px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      color: Black;
+      margin-bottom: 40px;
+      font-size: 48px;
+    }
+<h1 style="text-align: center;">Shop Is WIP</h1>
+    /* Tighter back-to-back video grid with longer videos */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 20px; /* Reduced gap for back-to-back feel */
+      margin: 0 auto;
+    }
+
+   footer {
+    background-color: white;   /* White background */
+    color: black;              /* Black text */
+    padding: 20px;
+    text-align: center;
+    position: fixed;           /* Sticks to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;               /* Full width */
+    border-top: 2px solid #ccc; /* Optional: clean top border */
+}
   </style>
 </head>
 <body>
 
-  <header>
-    <!-- Paste header code here -->
+  <header class="header">
+    <img src="Archie&Rocco1.png" alt="Archie & Rocco Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Members.html">Members</a>
+    </nav>
   </header>
 
-  <section>
-    <h1>Members</h1>
-    <div class="members-content">
-      <p>Become a member for exclusive perks coming soon!</p>
-      <ul class="perks">
-        <li>Early access to funny outtakes</li>
-        <li>Behind-the-scenes dog moments</li>
-        <li>Exclusive wallpapers & stickers</li>
-        <li>Shoutouts in videos</li>
-      </ul>
-      <p>More details coming soon – stay tuned!</p>
-    </div>
-  </section>
-
   <footer>
-    © 2026 Archie&Rocco – Made with ❤️ by Vance
+    © 2026 Archie & Rocco – Made by Vance
   </footer>
+<main>
+  <h1>Shop Coming Out Soon!!</h1>
+</main>
 
 </body>
 </html>
